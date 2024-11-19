@@ -1,0 +1,17 @@
+.main-image{
+  background-image: url(https://cdn.pixabay.com/photo/2023/11/29/03/43/graphic-8418608_1280.png);
+  background-size:contain; 
+  background-position: right; 
+  background-repeat: no-repeat; 
+  width: 100vw;
+  height: auto;
+  padding:3rem 3rem;
+}
+
+.main-align{
+   display: flex;
+   padding-left: 5rem;
+   justify-content: start;
+   align-items: center;
+  
+}

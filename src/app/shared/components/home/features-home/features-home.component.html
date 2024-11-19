@@ -1,0 +1,23 @@
+<section class="container container-fluid my-5">
+   <article class="d-flex flex-column justify-content-center align-items-center">
+      <div class="w-75">
+         <h3 class="text-center">Titulo</h3>
+         <p>Texto Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, quis vel perspiciatis quibusdam illo ex culpa rerum repellat alias consequuntur aliquid veritatis consequatur exercitationem atque deleniti omnis molestias consectetur officiis!</p>
+      </div>
+   </article>
+   <div class="container-fluid my-5 ">
+      <div class="row d-flex justify-content-center align-items-center gy-2 gx-2">
+         @for(card of cardSkillsArray;track card.title){
+            <div class="col-10 col-sm-8 col-mb-8 col-md-6 col-xl-4 ">
+               <shared-card-skill [dataCardSkills]="card"></shared-card-skill>
+            </div>
+         }
+         <!-- <div class="col-10 col-sm-8 col-mb-8 col-md-6 col-xl-4 "><shared-card-skill></shared-card-skill></div>
+         <div class="col-10 col-sm-8 col-mb-8 col-md-6 col-xl-4 "><shared-card-skill></shared-card-skill></div>
+         <div class="col-10 col-sm-8 col-mb-8 col-md-6 col-xl-4 "><shared-card-skill></shared-card-skill></div>
+         <div class="col-10 col-sm-8 col-mb-8 col-md-6 col-xl-4 "><shared-card-skill></shared-card-skill></div>
+         <div class="col-10 col-sm-8 col-mb-8 col-md-6 col-xl-4 "><shared-card-skill></shared-card-skill></div> -->
+      </div>
+   </div>
+   
+</section>
