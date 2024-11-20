@@ -3,11 +3,10 @@ import { CardSkillComponent } from '../../general/card-skill/card-skill.componen
 import { CardSkills } from '../../../../Models/helper-models';
 
 @Component({
-  selector: 'shared-features-home',
-  standalone: true,
-  imports: [CardSkillComponent],
-  templateUrl: './features-home.component.html',
-  styleUrl: './features-home.component.scss'
+    selector: 'shared-features-home',
+    imports: [CardSkillComponent],
+    templateUrl: './features-home.component.html',
+    styleUrl: './features-home.component.scss'
 })
 export class FeaturesHomeComponent {
 

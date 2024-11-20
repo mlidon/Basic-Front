@@ -6,15 +6,15 @@ import { FeaturesHomeComponent } from '../../shared/components/home/features-hom
 
 
 @Component({
-  selector: 'features-home',
-  standalone: true,
-  imports: [ 
-    RouterModule,
-    MainHomeComponent,
-    HeaderHomeComponent,
-    FeaturesHomeComponent],
-  templateUrl: './home.component.html',
-  styleUrl: './home.component.scss'
+    selector: 'features-home',
+    imports: [
+        RouterModule,
+        MainHomeComponent,
+        HeaderHomeComponent,
+        FeaturesHomeComponent
+    ],
+    templateUrl: './home.component.html',
+    styleUrl: './home.component.scss'
 })
 export class HomeComponent {
 

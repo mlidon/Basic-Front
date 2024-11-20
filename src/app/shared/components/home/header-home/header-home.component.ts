@@ -9,11 +9,10 @@ import { MenuHeader } from '../../../../Models/helper-models';
 
 
 @Component({
-  selector: 'shared-header-home',
-  standalone: true,
-  imports: [RouterLink,MatToolbarModule,MatIconModule,MatButtonModule,MatMenuModule],
-  templateUrl: './header-home.component.html',
-  styleUrl: './header-home.component.scss'
+    selector: 'shared-header-home',
+    imports: [RouterLink, MatToolbarModule, MatIconModule, MatButtonModule, MatMenuModule],
+    templateUrl: './header-home.component.html',
+    styleUrl: './header-home.component.scss'
 })
 
 export class HeaderHomeComponent implements OnInit {

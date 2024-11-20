@@ -3,11 +3,10 @@ import {MatCardModule} from '@angular/material/card';
 import { CardSkills } from '../../../../Models/helper-models';
 
 @Component({
-  selector: 'shared-card-skill',
-  standalone: true,
-  imports: [MatCardModule],
-  templateUrl: './card-skill.component.html',
-  styleUrl: './card-skill.component.scss'
+    selector: 'shared-card-skill',
+    imports: [MatCardModule],
+    templateUrl: './card-skill.component.html',
+    styleUrl: './card-skill.component.scss'
 })
 export class CardSkillComponent {
 
