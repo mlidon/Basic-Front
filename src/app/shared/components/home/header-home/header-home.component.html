@@ -1,5 +1,5 @@
 <header>
-   <mat-toolbar class="d-flex justify-content-between align-items-center">
+   <mat-toolbar class="d-flex justify-content-between align-items-center mat-elevation-z2">
 
       <!-- Title -->
       <div>
@@ -16,7 +16,7 @@
 
             <mat-menu #menu="matMenu">
                @for(item of itemsMenu;track item.title){
-                  <button mat-menu-item [routerLink]="item.link" [fragment]="item.fragment">
+                  <button mat-menu-item [routerLink]="'/' + item.link" [fragment]="item.fragment">
                     <mat-icon>{{item.icon}}</mat-icon>
                     <span>{{item.title}}</span>
                   </button>

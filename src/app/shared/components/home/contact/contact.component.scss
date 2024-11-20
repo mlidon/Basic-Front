@@ -1,0 +1,63 @@
+.form-content{
+   height: auto; 
+   width: 100%; 
+   padding: 2rem;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+   z-index: 5;
+}
+
+
+
+.card-form {
+   position: relative;
+   padding: 2rem;
+   max-width: 30%;
+   height: auto;
+   background-color: white;
+   border-radius: 0.5rem;
+   box-shadow: 0.5rem 0.5rem 0.8rem;
+   z-index: 5;
+ }
+
+ @media only screen and (max-width: 576px) {
+   .card-form {
+      position: relative;
+      padding: 2rem;
+      max-width: 90%;
+      height: auto;
+      background-color: white;
+      border-radius: 0.5rem;
+      box-shadow: 0.5rem 0.5rem 0.8rem;
+      z-index: 5;
+    }
+ }
+
+ @media only screen and (min-width: 576px) and (max-width: 992px){
+   .card-form {
+      position: relative;
+      padding: 3rem;
+      max-width: 65%;
+      height: auto;
+      background-color: white;
+      border-radius: 0.5rem;
+      box-shadow: 0.5rem 0.5rem 0.8rem;
+      z-index: 5;
+    }
+ }
+
+ @media only screen and (min-width: 992px) and (max-width: 1400px){
+   .card-form {
+      position: relative;
+      padding: 4rem;
+      max-width: 35%;
+      height: auto;
+      background-color: white;
+      border-radius: 0.5rem;
+      box-shadow: 0.5rem 0.5rem 0.8rem;
+      z-index: 5;
+    }
+ }

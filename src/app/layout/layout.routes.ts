@@ -5,7 +5,7 @@ import { DashboardLayoutComponent } from "./dashboard-layout/dashboard-layout.co
 import { HomeComponent } from "../fetures/home/home.component";
 
 export const routes:Routes =[
-   { path: '', component:HomeLayoutComponent,
+   { path: '', component:HomeLayoutComponent,   
       children:[
          {path:'home',component:HomeComponent}
       ]
@@ -16,3 +16,7 @@ export const routes:Routes =[
 
    }
 ];
+
+
+
+// loadChildren: () => import('./../fetures/home/home.routes').then(m=>m.routes)

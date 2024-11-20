@@ -1,0 +1,13 @@
+:host {
+   position: fixed;
+   top: 0;
+   left: 0;
+   right: 0;
+   z-index: 1000; /* Asegura que el header esté por encima de otros elementos */
+ }
+ 
+ .header {
+   /* Estilos adicionales para tu header */
+   background-color: #fff; /* O el color que prefieras */
+   box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Opcional: añade una sombra sutil */
+ }
