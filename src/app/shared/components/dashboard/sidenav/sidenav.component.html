@@ -1,1 +1,82 @@
-<p>sidenav works!</p>
+
+<!-- <shared-header (OpenSideNav)=" controlSideNav($event)"></shared-header>
+<mat-sidenav-container class="example-container">
+   <mat-sidenav #sidenav mode="side">
+     <h3>TITLE</h3>
+   </mat-sidenav>
+
+   <mat-sidenav-content>
+     <p><button mat-button (click)="sidenav.toggle()">sidenav.toggle()</button></p>
+      
+   </mat-sidenav-content>
+ </mat-sidenav-container> -->
+
+ <mat-sidenav-container class="sidenav-container" style="height: 100vh;">
+   <mat-sidenav #drawer mode="side" class="sidenav p-3">
+      <h4>TRIB-BUGG</h4>
+      <hr>
+      <h6 class="pb-2">Dashboard</h6>
+      <div class="d-flex flex-column justify-content-center">
+         <div>
+            <mat-icon>home</mat-icon><span class="ms-2">E-Commerce</span>
+         </div>
+         <div>
+            <mat-icon>account_balance</mat-icon><span class="ms-2">Banking</span>
+         </div>
+      </div>
+      <hr>
+      <h6 class="pb-2">Apps</h6>
+      <div class="d-flex flex-column justify-content-center">
+         <div>
+            <mat-icon>chat_bubble</mat-icon><span class="ms-2">Blog</span>
+         </div>
+         <div>
+            <mat-icon>calendar_month</mat-icon><span class="ms-2">Calendar</span>
+         </div>
+         <div>
+            <mat-icon>forum</mat-icon><span class="ms-2">Chat</span>
+         </div>
+         <div>
+            <mat-icon>file_copy</mat-icon><span class="ms-2">Files</span>
+         </div>
+         <div>
+            <mat-icon>view_kanban</mat-icon><span class="ms-2">Kanban</span>
+         </div>
+         <div>
+            <mat-icon>task_alt</mat-icon><span class="ms-2">Task List</span>
+         </div>
+      </div>
+   </mat-sidenav>
+
+   <mat-sidenav-content>
+
+     <mat-toolbar class="d-flex justify-content-between align-items-center mat-elevation-z2">
+       <button mat-icon-button (click)="drawer.toggle()">
+         <mat-icon>menu</mat-icon> 
+       </button>
+
+       <!-- Menú -->
+      <div class="mx-3">
+         <img  mat-icon-button src="https://img.freepik.com/fotos-premium/icono-perfil-fondo-blanco_941097-161552.jpg" width="55rem" alt="" [matMenuTriggerFor]="menu" class="cursor-pointer">     
+         <mat-menu #menu="matMenu">
+            <button mat-menu-item>
+               <mat-icon>account_circle</mat-icon><span>Perfil</span>
+            </button>
+            <button mat-menu-item>
+               <mat-icon>logout</mat-icon><span>LogOut</span>
+            </button>
+             
+         </mat-menu>
+        
+
+      </div>
+     </mat-toolbar>
+
+     <div class="main-content">
+         <div class="container mt-5">
+            <p>Bienvenido a la aplicación standalone!</p>
+
+         </div>
+     </div>
+   </mat-sidenav-content>
+ </mat-sidenav-container>
